@@ -10,7 +10,7 @@ export default function Projects() {
       <Row>
         <Col xs={12} className='projects-container mb-3'>
           <img src={cmDatabaseImage} alt='CM database' className='projects-image' />
-          <div>
+          <div className='music-text-div'>
             <h3>CM Database</h3>
             <p>A time-saving tool for church musicians who need to find music related to a particular Bible reading or religious theme.</p>
             <Button as={Link} to='https://github.com/AnthonyFort/CM-Database-2#readme' target='_blank' className='m-2'>README</Button> 
@@ -19,7 +19,7 @@ export default function Projects() {
         </Col>
         <Col xs={12} className='projects-container mb-3'>
           <img src={Froggus} alt='Froggus' className='projects-image' />
-          <div>
+          <div className='music-text-div'>
             <h3>Froggus Ad Parnassum</h3>
             <p>An arcade-style game that teaches the fundamentals of Classical music improvisation (Google Chrome required).</p>
             <Button as={Link} to='https://github.com/AnthonyFort/Froggus-ad-Parnassum/blob/main/README.md' target='_blank'className='m-2'>README</Button> 
