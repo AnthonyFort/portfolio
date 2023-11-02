@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 export default function Hero () {
   return (
-    <Container>
+    <Container className='hero'>
       <Row>
         <Col>
           <h1>Anthony Fort</h1>

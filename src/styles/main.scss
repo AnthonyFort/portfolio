@@ -2,8 +2,18 @@
 @import './components/Projects.scss';
 @import './components/music.scss';
 @import './components/Nav.scss';
+@import './components/Hero.scss';
 
 * {
   box-sizing: border-box;
 }
 
+.main {
+  margin-left: 200px;  
+}
+
+@media (max-width: 767px) {
+  .main {
+    margin-left: 0;
+  }
+}

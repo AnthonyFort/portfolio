@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
       <NavBar />
-      <main>
+      <main className='main'>
         <Hero />
         <Element name='about'><About /></Element>
         <Element name='projects'><Projects /></Element>
