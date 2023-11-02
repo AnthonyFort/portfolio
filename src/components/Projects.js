@@ -7,7 +7,6 @@ export default function Projects() {
   return (
     <Container>
       <h1>Projects</h1>
-
       <Row>
         <Col xs={12} className='projects-container mb-3'>
           <img src={cmDatabaseImage} alt='CM database' className='projects-image' />
@@ -19,10 +18,10 @@ export default function Projects() {
           </div>
         </Col>
         <Col xs={12} className='projects-container mb-3'>
-          <img src={Froggus} alt='CM database' className='projects-image' />
+          <img src={Froggus} alt='Froggus' className='projects-image' />
           <div>
             <h3>Froggus Ad Parnassum</h3>
-            <p>An arcade-style game that teaches the fundamentals of Classical music improvisation.</p>
+            <p>An arcade-style game that teaches the fundamentals of Classical music improvisation (Google Chrome required).</p>
             <Button as={Link} to='https://github.com/AnthonyFort/Froggus-ad-Parnassum/blob/main/README.md' target='_blank'className='m-2'>README</Button> 
             <Button as={Link} to='https://anthonyfort.github.io/Froggus-ad-Parnassum/'target='_blank' className='m-2'>Play the Game</Button>
           </div>
