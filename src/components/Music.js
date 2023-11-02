@@ -8,7 +8,7 @@ import podcast from '../images/podcast.png'
 
 export default function Music() {
   return (
-    <Container fluid>
+    <Container>
       <h1>Music</h1>
       <Row className='projects-container mb-4'>
         <Col xs={12} md={6} className='image-div'>
