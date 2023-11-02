@@ -7,7 +7,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 export default function Contact() {
   return (
     <Container className='mb-5'>
-      <h4>Contact Info</h4>
+      <h2>Contact Info</h2>
       <Row className='contact'>
         <Col xs={12}>
           <Link to='mailto:anthonyfort613@gmail.com' target='_blank' rel="noopener noreferrer" style={{ fontSize: '14px' }}>
