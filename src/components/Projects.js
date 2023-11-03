@@ -6,7 +6,7 @@ import Froggus from '../images/Froggus.png'
 export default function Projects() {
   return (
     <Container>
-      <h1>Coding Projects</h1>
+      <h2>Coding Projects</h2>
       <Row className='mb-4'>
         <Col xs={12} md={6} >
           <img src={cmDatabaseImage} alt='CM database' className='projects-image' />

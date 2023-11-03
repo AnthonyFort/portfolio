@@ -6,7 +6,7 @@ export default function Hero () {
       <Row>
         <Col>
           <h1>Anthony Fort</h1>
-          <h2>Software Engineer with a background in Music, Education, and Research</h2>
+          <h3>Software Engineer with a background in Music, Education, and Research</h3>
         </Col>
       </Row>
     </Container>
