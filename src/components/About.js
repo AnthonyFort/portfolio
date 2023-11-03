@@ -1,4 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap'
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 
 
@@ -9,8 +10,8 @@ export default function About() {
         <h2 className='header-text'>About</h2>
         <Col>
           <p>In the summer of 2023, I completed 420 hours of <strong>Software Engineering</strong> training through General Assembly. During that time, I was offered a place on a government-funded Skills Bootcamp in <strong>Cloud Engineering</strong>, run by AI Core, which I am currently completing.</p>
-          <p>I love coding and am open to working in any sector, so please check out my projects below and get in touch if you would like to talk more.</p>
-          <p>To learn more about me and what else I&apos;ve been up to, check out the Life Before Coding section!</p>
+          <p>I love coding and am open to working in any sector, so please check out my <Link as={Link} to="projects" smooth={true} duration={500} className='link-text'>projects</Link> below and <Link as={Link} to="contact" smooth={true} duration={500} className='link-text'>get in touch</Link> if you would like to talk more.</p>
+          <p>To learn more about me and what else I&apos;ve been up to, check out the Life Before Coding section! </p>
         </Col>
       </Row>
       <Row className='text-center'> 

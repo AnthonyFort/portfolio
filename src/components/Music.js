@@ -4,6 +4,7 @@ import evenNote from '../images/even-note.png'
 import phd from '../images/phd.png'
 import masters from '../images/masters.png'
 import podcast from '../images/podcast.png'
+import { Link as InnerLink, animateScroll as scroll } from 'react-scroll'
 
 export default function Music() {
   return (
@@ -16,7 +17,7 @@ export default function Music() {
         <Col xs={12} md={5} >
           <h3>PhD Research</h3>
           <p>At Columbia University, I made videos which demonstrated how you can take a piece of music, and, by moving your body in very particular ways, change your subjective experience of the musical rhythm.</p>
-          <p>My work in this area evolved a lot <i>after</i> writing the PhD; so, to read a more up-to-date essay and view the videos, please contact me.</p>
+          <p>My work in this area evolved a lot <i>after</i> writing the PhD; so, to read a more up-to-date essay and view the videos, please <InnerLink as={Link} to="contact" smooth={true} duration={500} className='link-text'>contact me</InnerLink>.</p>
         </Col>
       </Row>
       <Row className='mb-4'>
@@ -26,7 +27,7 @@ export default function Music() {
         <Col xs={12} md={5} >
           <h3>Even-Note Illusion</h3>
           <p>As an appendix to my PhD, I constructed an auditory illusion. In it, I layered carefully-placed click sounds on top of a recording of a piano. The rhythm of the <i>piano</i> seems to change, quite dramatically.</p>
-          <p>Please contact me for more info.</p>
+          <p>Please <InnerLink as={Link} to="contact" smooth={true} duration={500} className='link-text'>contact me</InnerLink> for more info.</p>
         </Col>
       </Row>
       <Row className='mb-4'>
@@ -36,7 +37,7 @@ export default function Music() {
         <Col xs={12} md={5} >
           <h3>Musical Decoding</h3>
           <p>In 2015 (before I was a coder), I wrote a Masters thesis that &apos;decoded&apos; a hidden pattern in a large orchestral work, <i>Palimpsests</i>, by the English Classical composer George Benjamin. Years later, I would realise that musical &apos;Set Theory&apos; and &apos;Sets&apos; in computer programming must be related!</p>
-          <p>Please contact me for more info.</p>
+          <p>Please <InnerLink as={Link} to="contact" smooth={true} duration={500} className='link-text'>contact me</InnerLink> for more info.</p>
         </Col>
       </Row>
       <Row className='mb-4'>
