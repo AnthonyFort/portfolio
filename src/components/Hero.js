@@ -5,7 +5,7 @@ export default function Hero () {
     <Container className='hero'>
       <Row>
         <Col>
-          <h1>Anthony Fort</h1>
+          <h1><u>Anthony Fort</u></h1>
           <h3>Software Engineer with a background in Music, Education, and Research</h3>
         </Col>
       </Row>

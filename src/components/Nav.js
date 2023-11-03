@@ -1,35 +1,5 @@
-
-// import { useState } from 'react'
-// import { Container, Nav, Navbar, Button } from 'react-bootstrap'
-// import { Link, animateScroll as scroll, Element } from 'react-scroll'
-
-// export default function NavBar() {
-//   return (
-//     <Navbar expand="lg" >
-//       <Container className='nav'>
-//         <Navbar.Brand href="/">
-
-//         </Navbar.Brand>
-
-//         <Navbar.Toggle aria-controls="basic-navbar-nav">
-//           Click for more
-//         </Navbar.Toggle>
-
-//         <Navbar.Collapse id="basic-navbar-nav">
-//           <Nav className="mr-auto">
-//             <Link as={Link} to="about" smooth={true} duration={500}>About</Link>
-//             <Link as={Link} to="projects" smooth={true} duration={500}>Projects</Link>
-//             <Link as={Link} to="music" smooth={true} duration={500}>Music</Link>
-//             <Link as={Link} to="contact" smooth={true} duration={500}>Contact</Link>
-//           </Nav>
-//         </Navbar.Collapse>
-//       </Container>
-//     </Navbar>
-//   )
-// }
-
 import { useState } from 'react'
-import { Container, Navbar, Nav, Modal, Button } from 'react-bootstrap'
+import { Navbar, Nav, Modal, Button } from 'react-bootstrap'
 import { Link, animateScroll as scroll } from 'react-scroll'
 
 export default function NavBar() {
@@ -45,8 +15,8 @@ export default function NavBar() {
           <Link as={Link} to="contact" smooth={true} duration={500}>Contact</Link>
         </Nav>
       </div>
-      <Navbar className="d-md-none fixed-navbar" expand="lg">
-        <Navbar.Toggle className="full-width-btn" onClick={() => setShowModal(true)}>Menu</Navbar.Toggle>
+      <Navbar className="d-md-none nav-button" expand="lg">
+        <Navbar.Toggle className="nav-button" onClick={() => setShowModal(true)}>Menu</Navbar.Toggle>
       </Navbar>
 
 

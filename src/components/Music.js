@@ -8,7 +8,7 @@ import podcast from '../images/podcast.png'
 export default function Music() {
   return (
     <Container >
-      <h2>Music</h2>
+      <h2 className='header-text'>Life Before Coding</h2>
       <Row className='mb-4'>
         <Col xs={12} md={6} >
           <img src={phd} alt='PHD' className='projects-image' />
@@ -35,7 +35,7 @@ export default function Music() {
         </Col>
         <Col xs={12} md={5} >
           <h3>Musical Decoding</h3>
-          <p>Before I was a coder, I &apos;decoded&apos; a hidden pattern in a large orchestral work, <i>Palimpsests</i>, by the contemporary English Classical composer George Benjamin. This was for my Masters thesis (Columbia University, 2015).  Years later, I would realise that musical &apos;Set Theory&apos; and &apos;Sets&apos; in computer programming must be related!</p>
+          <p>In 2015 (before I was a coder), I wrote a Masters thesis that &apos;decoded&apos; a hidden pattern in a large orchestral work, <i>Palimpsests</i>, by the English Classical composer George Benjamin. Years later, I would realise that musical &apos;Set Theory&apos; and &apos;Sets&apos; in computer programming must be related!</p>
           <p>Please contact me for more info.</p>
         </Col>
       </Row>
@@ -94,7 +94,7 @@ export default function Music() {
         <Col xs={12} md={5} >
           <h3>Psychology for Songwriters Podcast</h3>
           <p>I love podcasts, but I could never find one that provided a real deep-dive into the creative process. So I tried making one myself.</p>
-          <Button as={Link} to='https://podcasts.apple.com/us/podcast/psychology-for-songwriters/id1665379292' target='_blank' className='m-2'>Listen Here</Button>
+          <Button as={Link} to='https://podcasts.apple.com/us/podcast/psychology-for-songwriters/id1665379292' target='_blank' className='m-2' size='sm'>Listen Here</Button>
         </Col>
       </Row>
       <Row className='mb-4'>
@@ -111,7 +111,7 @@ export default function Music() {
         <Col xs={12} md={5} >
           <h3>Union Chapel</h3>
           <p>When I&apos;m not coding, I&apos;m the Director of Music at Union Chapel Church, Islington.</p>
-          <p>It&apos;s busy, but once CM Database has a few more users, I could save a few hours every week.</p>
+          <p>It&apos;s busy, but once CM Database has a few more users, I could save a few hours every week!</p>
         </Col>
       </Row>
     </Container >

@@ -1,25 +1,7 @@
-.nav {
-  margin-top: 100px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000; 
-}
-
-.navbar-nav .nav-link {
-  font-size: 18px; 
-}
-
 .nav-menu {
   display: flex;
   flex-direction: column;
 }
-
-.nav-menu a:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
 
 .sidebar {
   position: fixed;
@@ -32,31 +14,19 @@
   padding: 20px 0;
   cursor: pointer;
   text-decoration: underline;
-}
-.sidebar .nav-link {
   margin-bottom: 10px;
-  
+  padding-left: 18px;
 }
 
-.full-width-btn {
+.nav-button {
   width: 100%;
-  background-color: #347b08; 
+  background-color: black; 
   color: #ffffff; 
-  border: 2px solid black; 
   border-radius: 0;
-}
-.full-width-btn:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.fixed-navbar {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030; 
+  z-index: 1000; 
 }
-.sidebar .flex-column {
-  padding-left: 18px;
-}
+
