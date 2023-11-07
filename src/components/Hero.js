@@ -5,8 +5,9 @@ export default function Hero () {
     <Container className='hero'>
       <Row>
         <Col>
-          <h1><u>Anthony Fort</u></h1>
-          <h3>Software Engineer with a background in Music, Education, and Research</h3>
+          <h1 className='hero-header'>Anthony Fort</h1>
+          <h3 className='hero-subheader'>Software Engineer</h3>
+          <h3 className='hero-subheader'>musician / teacher / researcher</h3>
         </Col>
       </Row>
     </Container>
