@@ -7,7 +7,7 @@ export default function Hero () {
         <Col>
           <h1 className='hero-header'>Anthony Fort</h1>
           <h3 className='hero-subheader'>Software Engineer</h3>
-          <h3 className='hero-subheader'>musician / teacher / researcher</h3>
+          <h4 className='hero-subheader'>musician / teacher / researcher</h4>
         </Col>
       </Row>
     </Container>
