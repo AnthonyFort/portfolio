@@ -3,10 +3,17 @@
   flex-direction: column;
   align-items: center; 
   justify-content: center; 
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 5px;
+  padding:5x;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .skills-icons {
   font-size: 40px;
+  padding-top: 10px;
 }
 
 .about-container {
@@ -29,6 +36,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10px;
 }
 
+.skills-header-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.skills-header-col {
+
+}
