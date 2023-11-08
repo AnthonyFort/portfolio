@@ -2,6 +2,38 @@
 max-width: 280px;
 height: auto;
 margin-bottom: 10px;
-border: 1px solid grey
+
+
 }
 
+.project-row {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  margin: 20px;
+  align-items: center;
+  flex: 1;
+}
+
+.project-div {
+  display: flex;
+}
+
+.project-header {
+  margin-left: 20px;
+}
+
+.project-image-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-text-col {
+  text-align: center;
+  margin-top: -50px;
+  margin-bottom: 10px;
+  h3 {
+    font-size: 20px;
+  }
+}
