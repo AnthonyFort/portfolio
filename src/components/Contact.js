@@ -7,8 +7,8 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 export default function Contact() {
   return (
     <Container className='mb-5'>
-      <h2 className='header-text'>Contact Info</h2>
-      <Row className='contact'>
+      <h2 className='header-text project-header'>Contact Info</h2>
+      <Row className='contact-row'>
         <Col xs={12}>
           <Link to='mailto:anthonyfort613@gmail.com' target='_blank' rel="noopener noreferrer" style={{ fontSize: '14px' }}>
             <FontAwesomeIcon icon={faEnvelope} size='md' style={{ color: 'black', marginRight: '8px' }} />
