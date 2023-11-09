@@ -6,15 +6,16 @@
   border: 2px solid black;
   border-radius: 8px;
   margin: 5px;
-  padding:5px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 20px; 
+  box-sizing: border-box; 
+  min-width: 100px; 
 }
 
 .skills-icons {
-  font-size: 40px;
+  font-size: 3rem; 
   padding-top: 10px;
 }
+
 
 .about-container {
   h2 {
