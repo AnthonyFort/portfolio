@@ -107,25 +107,31 @@ export default function Music() {
   }
 
   return (
-    <Container className='mx-3'>
-      <Accordion defaultActiveKey="0">
-        {musicInfo.map((item, index) => (
-          <Accordion.Item eventKey={`${index}`} key={index}>
-            <Accordion.Header>{item.title}</Accordion.Header>
-            <Accordion.Body>
-              <Row>
-                <Col xs={12} md={4}>
-                  {renderMedia(item.media, item.title)}
-                </Col>
-                <Col xs={12} md={8} className='accordion-text'>
-                  {item.description}
-                </Col>
-              </Row>
-            </Accordion.Body>
-          </Accordion.Item>
-        ))}
-      </Accordion>
-    </Container>
+    <div className='accordion-div'>
+      <Container className='m-3'>
+        <Row className='accorion'>
+          <Col xs={10} sm={10} md={10} className="mx-auto">
+            <Accordion defaultActiveKey="0">
+              {musicInfo.map((item, index) => (
+                <Accordion.Item eventKey={`${index}`} key={index}>
+                  <Accordion.Header>{item.title}</Accordion.Header>
+                  <Accordion.Body>
+                    <Row>
+                      <Col xs={12} md={4}>
+                        {renderMedia(item.media, item.title)}
+                      </Col>
+                      <Col xs={12} md={8} className='accordion-text'>
+                        {item.description}
+                      </Col>
+                    </Row>
+                  </Accordion.Body>
+                </Accordion.Item>
+              ))}
+            </Accordion>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   )
 }
 
