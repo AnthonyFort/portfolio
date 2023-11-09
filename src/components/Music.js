@@ -112,7 +112,7 @@ export default function Music() {
         <h2 className='header-text project-header'>Life Before Coding</h2>
         <Row className='mt-4'>
           <Col xs={10} sm={10} md={10} className="mx-auto">
-            <Accordion defaultActiveKey="0">
+            <Accordion>
               {musicInfo.map((item, index) => (
                 <Accordion.Item eventKey={`${index}`} key={index}>
                   <Accordion.Header>{item.title}</Accordion.Header>
