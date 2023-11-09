@@ -5,28 +5,38 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function Contact() {
+
+  const contactLinks = [
+    {
+      text: 'anthonyfort613@gmail.com',
+      link: 'mailto:anthonyfort613@gmail.com',
+      icon: faEnvelope,
+    },
+    {
+      text: 'GitHub',
+      link: 'https://github.com/AnthonyFort',
+      icon: faGithub,
+    },
+    {
+      text: 'LinkedIn',
+      link: 'https://www.linkedin.com/in/anthony-fort-8235721b7/',
+      icon: faLinkedin,
+    }
+  ]
+
   return (
     <Container className='mb-5'>
       <h2 className='header-text project-header'>Contact Info</h2>
       <Row className='contact-row'>
-        <Col xs={12}>
-          <Link to='mailto:anthonyfort613@gmail.com' target='_blank' rel="noopener noreferrer" style={{ fontSize: '14px' }}>
-            <FontAwesomeIcon icon={faEnvelope} size='md' style={{ color: 'black', marginRight: '8px' }} />
-            anthonyfort613@gmail.com
-          </Link>
-        </Col>
-        <Col xs={12}>
-          <Link to='https://github.com/AnthonyFort' target='_blank' rel="noopener noreferrer" style={{ fontSize: '14px' }}>
-            <FontAwesomeIcon icon={faGithub} size='md' style={{ color: 'black', marginRight: '8px' }} />
-            GitHub
-          </Link>
-        </Col>
-        <Col xs={12}>
-          <Link to='https://www.linkedin.com/in/anthony-fort-8235721b7/' target='_blank' rel="noopener noreferrer" style={{ fontSize: '14px' }}>
-            <FontAwesomeIcon icon={faLinkedin} size='md' style={{ color: 'black', marginRight: '8px' }} />
-            LinkedIn
-          </Link>
-        </Col>
+        
+        {contactLinks.map((item, index) => (
+          <Col xs={12} key={index}>
+            <Link to={item.link} target='_blank' rel="noopener noreferrer" style={{ fontSize: '14px' }}>
+              <FontAwesomeIcon icon={item.icon} size='md' style={{ color: 'black', marginRight: '8px' }} />
+              {item.text}
+            </Link>
+          </Col>
+        ))}
       </Row>
 
     </Container>
