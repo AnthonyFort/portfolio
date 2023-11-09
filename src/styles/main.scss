@@ -30,6 +30,12 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 920px) {
+  .project-div {
+    flex-direction: column;
+  }
+}
+
 // @media screen and (min-width: 1400px) {
 //   .about-container {
 //     padding-left: 270px;

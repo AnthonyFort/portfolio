@@ -10,9 +10,9 @@ export default function About() {
         <Row className='about-row'>
           <Col xs={11} sm={8} md={7} lg={6} xl={5} className='about-col'>
             <h2>About</h2>
-            <p>In the summer of 2023, I completed 420 hours of <strong>Software Engineering</strong> training at General Assembly. I am now on a government-funded Skills Bootcamp in <strong>Cloud Engineering</strong> with AI Core.</p>
+            <p>I am currently on a government-funded <strong>Cloud Engineering</strong> bootcamp with AI Core. Before that, I completed 420 hours of <strong>Software Engineering</strong> training at General Assembly. </p>
             <p>I love coding and am open to working in any sector, so please check out my <Link as={Link} to="projects" smooth={true} duration={500} className='link-text'>projects</Link> below and <Link as={Link} to="contact" smooth={true} duration={500} className='link-text'>get in touch</Link> if you would like to talk more.</p>
-            <p>To learn more about me and what else I&apos;ve been up to, check out the Life Before Coding section! </p>
+            <p>To learn more about me, check out the <Link as={Link} to="music" smooth={true} duration={500} className='link-text'>Life Before Coding</Link> section! </p>
           </Col>
         </Row>
       </Container>
