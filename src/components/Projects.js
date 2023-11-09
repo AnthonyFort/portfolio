@@ -26,7 +26,7 @@ export default function Projects() {
             <img src={Froggus} alt='Froggus' className='projects-image' />
           </Col>
           <Col xs={12} md={8} className='project-text-col' >
-            <p>A game that teaches musical theory (desktop - Chrome required).</p>
+            <p>A game that teaches music theory (desktop - Chrome required).</p>
             <Button as={Link} to='https://github.com/AnthonyFort/Froggus-ad-Parnassum/blob/main/README.md' target='_blank' className='m-2' size='sm'>README</Button>
             <Button as={Link} to='https://anthonyfort.github.io/Froggus-ad-Parnassum/' target='_blank' className='m-2' size='sm'>Play</Button>
           </Col>

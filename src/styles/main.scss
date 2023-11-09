@@ -34,7 +34,15 @@
   .project-div {
     flex-direction: column;
   }
+  .project-image-col {
+    h3 {
+      white-space: normal;
+    }
+  } 
 }
+
+
+
 
 // @media screen and (min-width: 1400px) {
 //   .about-container {
