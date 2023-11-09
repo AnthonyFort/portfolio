@@ -11,7 +11,7 @@ export default function Music() {
 
   const musicInfo = [
     {
-      title: 'PhD Research',
+      title: 'PhD Research...',
       media: phd,
       description: (
         <>
@@ -21,7 +21,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'Even-Note Illusion',
+      title: 'Even-Note Illusion...',
       media: evenNote,
       description: (
         <>
@@ -31,7 +31,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'Musical \'Decoding\'',
+      title: 'Musical \'Decoding\'...',
       media: masters,
       description: (
         <>
@@ -41,7 +41,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'Musical Composition',
+      title: 'Musical Composition...',
       media: 'https://www.youtube.com/embed/OTBAwCj6bCc',
       description: (
         <>
@@ -50,7 +50,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'Children\'s Music',
+      title: 'Children\'s Music...',
       media: 'https://www.youtube.com/embed/EwwrAh_IneY',
       description: (
         <>
@@ -59,7 +59,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'University Teaching',
+      title: 'University Teaching...',
       media: 'https://www.youtube.com/embed/-zs8MLRk45c?list=PL9NhgGsNfA7XVmCLy1IUJQRRdqBLyJq1p',
       description: (
         <>
@@ -68,7 +68,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'Psychology for Songwriters Podcast',
+      title: 'Psychology for Songwriters Podcast...',
       media: podcast,
       description: (
         <>
@@ -78,7 +78,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'Union Chapel',
+      title: 'Union Chapel...',
       media: 'https://www.youtube.com/embed/59uGN0oxS6A',
       description: (
         <>

@@ -28,7 +28,7 @@ export default function NavBar() {
         <Modal.Body className="nav-menu">
           <Link as={Link} to="about" smooth={true} duration={500} onClick={() => setShowModal(false)}>About</Link>
           <Link as={Link} to="projects" smooth={true} duration={500} onClick={() => setShowModal(false)}>Projects</Link>
-          <Link as={Link} to="music" smooth={true} duration={500} onClick={() => setShowModal(false)}>Music</Link>
+          <Link as={Link} to="music" smooth={true} duration={500} onClick={() => setShowModal(false)}>Life Before Coding</Link>
           <Link as={Link} to="contact" smooth={true} duration={500} onClick={() => setShowModal(false)}>Contact</Link>
         </Modal.Body>
         <Modal.Footer>

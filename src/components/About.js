@@ -23,7 +23,10 @@ export default function About() {
             ['devicon-javascript-plain', 'JavaScript'],
             ['devicon-react-original', 'React']
           ].map(([iconClass, text]) => (
-            <Col xs={3} md={3} lg={3} className='skills-icons-col mb-4' key={iconClass}>
+            <Col xs={3} md={3} lg={3} className='skills-icons-col mb-4' style={{
+              paddingLeft: '25px',
+              paddingRight: '25px',
+            }} key={iconClass}>
               <i className={iconClass + ' skills-icons'}></i>
               <p className='mt-2'>{text}</p>
             </Col>
@@ -35,7 +38,10 @@ export default function About() {
             ['devicon-mongodb-plain', 'MongoDB'],
             ['devicon-express-original', 'Express']
           ].map(([iconClass, text]) => (
-            <Col xs={3} md={3} lg={3} className='skills-icons-col mb-4' key={iconClass}>
+            <Col xs={3} md={3} lg={3} className='skills-icons-col mb-4' style={{
+              paddingLeft: '25px',
+              paddingRight: '25px',
+            }} key={iconClass}>
               <i className={iconClass + ' skills-icons'}></i>
               <p className='mt-2'>{text}</p>
             </Col>

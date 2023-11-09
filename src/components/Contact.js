@@ -25,10 +25,9 @@ export default function Contact() {
   ]
 
   return (
-    <Container className='mb-5'>
-      <h2 className='header-text project-header'>Contact Info</h2>
+    <Container className='mb-5 contact-container'>
+      <h2 className='header-text project-header'>Contact</h2>
       <Row className='contact-row'>
-        
         {contactLinks.map((item, index) => (
           <Col xs={12} key={index}>
             <Link to={item.link} target='_blank' rel="noopener noreferrer" style={{ fontSize: '14px' }}>
