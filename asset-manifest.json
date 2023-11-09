@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c7816713.css",
-    "main.js": "/portfolio/static/js/main.c7cd44b7.js",
+    "main.css": "/portfolio/static/css/main.fdf55941.css",
+    "main.js": "/portfolio/static/js/main.03926d25.js",
     "static/media/even-note.png": "/portfolio/static/media/even-note.ce7f134b4d30aca229d1.png",
     "static/media/podcast.png": "/portfolio/static/media/podcast.30310a1b8b8db379d063.png",
     "static/media/phd.png": "/portfolio/static/media/phd.76a5a5fadce5fcd1898b.png",
-    "static/media/Froggus.png": "/portfolio/static/media/Froggus.435ac69f37ec873cd4bf.png",
-    "static/media/CM-database.png": "/portfolio/static/media/CM-database.0b190b51a1a64d8264a7.png",
+    "static/media/macbook-froggus.png": "/portfolio/static/media/macbook-froggus.f0349e416e9b3deb73fc.png",
     "static/media/masters.png": "/portfolio/static/media/masters.69a0bf370e31d51aa9c5.png",
+    "static/media/macbook-cm-database.png": "/portfolio/static/media/macbook-cm-database.a2162ce4e6edd1986d84.png",
     "index.html": "/portfolio/index.html",
-    "main.c7816713.css.map": "/portfolio/static/css/main.c7816713.css.map",
-    "main.c7cd44b7.js.map": "/portfolio/static/js/main.c7cd44b7.js.map"
+    "main.fdf55941.css.map": "/portfolio/static/css/main.fdf55941.css.map",
+    "main.03926d25.js.map": "/portfolio/static/js/main.03926d25.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7816713.css",
-    "static/js/main.c7cd44b7.js"
+    "static/css/main.fdf55941.css",
+    "static/js/main.03926d25.js"
   ]
 }
