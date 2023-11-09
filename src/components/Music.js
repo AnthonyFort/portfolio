@@ -63,7 +63,7 @@ export default function Music() {
       media: 'https://www.youtube.com/embed/-zs8MLRk45c?list=PL9NhgGsNfA7XVmCLy1IUJQRRdqBLyJq1p',
       description: (
         <>
-          <p>I used to teach composition at the Cambridge University, and made a 30-lesson course in Classical improvisation.</p>
+          <p>I used to teach composition at Cambridge University, and made a 30-lesson course in Classical improvisation.</p>
         </>
       ),
     },
