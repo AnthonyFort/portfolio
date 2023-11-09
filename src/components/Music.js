@@ -15,7 +15,7 @@ export default function Music() {
       media: phd,
       description: (
         <>
-          <p>At Columbia University I made videos which demonstrated how to change your experience of rhythm by moving in very particular ways.</p>
+          <p>At Columbia University I made videos demonstrating how to change your experience of rhythm by moving in very particular ways.</p>
           <p>Please <ScrollLink to="contact" smooth={true} duration={500} className='link-text'>contact me</ScrollLink> for more info.</p>
         </>
       ),
@@ -88,46 +88,50 @@ export default function Music() {
     }
   ]
 
-  const renderMedia = (media, title) => {
-    if (media.includes('youtube')) {
+  function renderMedia(media, title) {
+    if (media.includes('youtube.com')) {
       return (
-        <iframe
-          width="100%"
-          height="315"
-          src={media}
-          title={title}
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+        <div className="ratio ratio-16x9">
+          <iframe
+            src={media}
+            title={title}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
       )
     } else {
-      return <img src={media} alt={title} className='projects-image' />
+      return <img src={media} alt={title} className="img-fluid accordion-img" />
     }
   }
-
+  
   return (
     <div className='accordion-div'>
       <Container className='m-3'>
-        <Row className='accorion'>
+        <h2 className='header-text project-header'>Life Before Coding</h2>
+        <Row className='mt-4'>
           <Col xs={10} sm={10} md={10} className="mx-auto">
             <Accordion defaultActiveKey="0">
               {musicInfo.map((item, index) => (
                 <Accordion.Item eventKey={`${index}`} key={index}>
                   <Accordion.Header>{item.title}</Accordion.Header>
                   <Accordion.Body>
-                    <Row>
-                      <Col xs={12} md={4}>
-                        {renderMedia(item.media, item.title)}
-                      </Col>
-                      <Col xs={12} md={8} className='accordion-text'>
-                        {item.description}
-                      </Col>
-                    </Row>
+                    <Container>
+                      <Row className="justify-content-md-center">
+                        <Col xs={12} className='accordion-media'>
+                          {renderMedia(item.media, item.title)}
+                        </Col>
+                        <Col xs={12} lg={8} className='accordion-text'>
+                          {item.description}
+                        </Col>
+                      </Row>
+                    </Container>
                   </Accordion.Body>
                 </Accordion.Item>
               ))}
             </Accordion>
+
           </Col>
         </Row>
       </Container>

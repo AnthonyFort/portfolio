@@ -1,8 +1,26 @@
 .accordion-text {
-  margin-top: 30px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .accordion-div {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordion-media {
+  display: flex;
   justify-content: center;
+}
+
+.accordion-img {
+  max-height: 120px; 
+  width: auto;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top: 5px;
+  border: 2px solid lightgrey;
+  border-radius: 4px;
 }
