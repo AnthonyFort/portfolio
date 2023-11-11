@@ -15,7 +15,7 @@ export default function Projects() {
         <>
           <p>A search tool for church musicians to find music related to Biblical readings or themes.</p>
           <div className='project-button-div'>
-            <Button as={Link} to='https://github.com/AnthonyFort/CM-Database-2#readme' target='_blank' className='m-2 project-button' size='sm'>README</Button>
+            <Button as={Link} to='https://github.com/AnthonyFort/CM-Database-2#readme' target='_blank' className='m-2 project-button' size='sm'>GitHub</Button>
             <Button as={Link} to='https://cm-database-a7b05e162636.herokuapp.com/' target='_blank' className='m-2 project-button' size='sm'>Visit</Button>
           </div>
 
@@ -47,7 +47,7 @@ export default function Projects() {
         <>
           <p>A game that teaches music theory <br /> (desktop - Chrome required).</p>
           <div className='project-button-div'>
-            <Button as={Link} to='https://github.com/AnthonyFort/Froggus-ad-Parnassum/blob/main/README.md' target='_blank' className='m-2 project-button' size='sm'>README</Button>
+            <Button as={Link} to='https://github.com/AnthonyFort/Froggus-ad-Parnassum/blob/main/README.md' target='_blank' className='m-2 project-button' size='sm'>GitHub</Button>
             <Button as={Link} to='https://anthonyfort.github.io/Froggus-ad-Parnassum/' target='_blank' className='m-2 project-button' size='sm'>Play</Button>
           </div>
         </>
