@@ -48,10 +48,10 @@
 
 .skills-row {
   justify-content: center;
+  width: 300px;
 }
 
 .skill-div {
-
   display: flex;
   flex-direction: column;
   align-items: center; 
@@ -62,7 +62,9 @@
     font-size: 0.7rem; 
   }
   padding-top: 10px; 
-  min-width: 90px;
+  width: 80px; 
+  height: 80px; 
+  justify-content: center; 
 }
 
 .skill-icon {
