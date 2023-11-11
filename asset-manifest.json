@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1dc19707.css",
-    "main.js": "/portfolio/static/js/main.28c12b67.js",
+    "main.css": "/portfolio/static/css/main.98699ec8.css",
+    "main.js": "/portfolio/static/js/main.3d00e42d.js",
     "static/media/even-note.png": "/portfolio/static/media/even-note.ce7f134b4d30aca229d1.png",
     "static/media/podcast.png": "/portfolio/static/media/podcast.30310a1b8b8db379d063.png",
     "static/media/phd.png": "/portfolio/static/media/phd.76a5a5fadce5fcd1898b.png",
@@ -9,11 +9,11 @@
     "static/media/masters.png": "/portfolio/static/media/masters.69a0bf370e31d51aa9c5.png",
     "static/media/macbook-cm-database.png": "/portfolio/static/media/macbook-cm-database.a2162ce4e6edd1986d84.png",
     "index.html": "/portfolio/index.html",
-    "main.1dc19707.css.map": "/portfolio/static/css/main.1dc19707.css.map",
-    "main.28c12b67.js.map": "/portfolio/static/js/main.28c12b67.js.map"
+    "main.98699ec8.css.map": "/portfolio/static/css/main.98699ec8.css.map",
+    "main.3d00e42d.js.map": "/portfolio/static/js/main.3d00e42d.js.map"
   },
   "entrypoints": [
-    "static/css/main.1dc19707.css",
-    "static/js/main.28c12b67.js"
+    "static/css/main.98699ec8.css",
+    "static/js/main.3d00e42d.js"
   ]
 }
