@@ -19,10 +19,6 @@ margin-bottom: 10px;
   display: flex;
 }
 
-.project-header {
-  margin-left: 20px;
-}
-
 .project-image-col {
   display: flex;
   flex-direction: column;
@@ -43,4 +39,23 @@ margin-bottom: 10px;
   text-align: center;
   margin-top: -50px;
   margin-bottom: 10px;
+}
+
+.skill-div {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-top: 2px;
+  p {
+    font-size: 0.7rem; 
+  }
+  padding-top: 10px;
+  // min-width: 100px;  
+}
+
+.skill-icon {
+  font-size: 1.8rem;
 }
