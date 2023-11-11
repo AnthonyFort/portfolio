@@ -109,7 +109,7 @@ export default function Music() {
   return (
     <div className='accordion-div'>
       <Container className='m-3'>
-        <h2 className='header-text project-header'>Life Before Coding</h2>
+        <h2 className='header-text project-header'>Music</h2>
         <Row className='mt-4'>
           <Col xs={10} sm={10} md={10} className="mx-auto">
             <Accordion>
