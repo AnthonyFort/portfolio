@@ -26,7 +26,7 @@ export default function Contact() {
 
   return (
     <Container className='mb-5 contact-container'>
-      <h2 className='header-text project-header'>Contact</h2>
+      <h2 className='header-text'>Contact</h2>
       <Row className='contact-row'>
         {contactLinks.map((item, index) => (
           <Col xs={12} key={index}>

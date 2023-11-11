@@ -3,7 +3,6 @@
 @import './components/music.scss';
 @import './components/Nav.scss';
 @import './components/Hero.scss';
-@import './components/SectionHeaders.scss';
 @import './components/Contact.scss';
 
 * {
@@ -34,24 +33,4 @@ h2 {
 
 .link-text {
   cursor: pointer;
-}
-
-@media screen and (max-width: 920px) {
-  .project-div {
-    flex-direction: column;
-  }
-  .project-image-col {
-    h3 {
-      white-space: normal;
-    }
-  } 
-}
-
-@media (max-width: 768px) {
-  .skills-icons-col {
-    padding: 15px; 
-  }
-  .skills-icons {
-    font-size: 2.5rem; 
-  }
 }

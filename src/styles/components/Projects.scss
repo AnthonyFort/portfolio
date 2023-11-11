@@ -1,45 +1,3 @@
-.projects-image {
-max-width: 280px;
-height: auto;
-margin-bottom: 10px;
-}
-
-.project-row {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid grey;
-  margin: 20px;
-  align-items: center;
-  flex: 1;
-}
-
-
-
-.project-image-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  h3 {
-    font-size: 20px;
-    margin-top: 15px;
-    text-align: center;
-    white-space: nowrap;
-  }
-  img {
-    margin-top: -45px;
-  }
-}
-
-.project-text-col {
-  text-align: center;
-  margin-top: -50px;
-  margin-bottom: 10px;
-}
-
-
-
-
 .projects-container {
   justify-content: center;
 }
@@ -88,6 +46,9 @@ margin-bottom: 10px;
   border: 0px;
 }
 
+.skills-row {
+  justify-content: center;
+}
 
 .skill-div {
 
