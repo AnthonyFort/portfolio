@@ -112,9 +112,9 @@ export default function Music() {
         <h2 className='header-text'>Music</h2>
         <Row className='mt-4'>
           <Col xs={10} sm={10} md={10} className="mx-auto">
-            <Accordion>
+            <Accordion >
               {musicInfo.map((item, index) => (
-                <Accordion.Item eventKey={`${index}`} key={index}>
+                <Accordion.Item eventKey={`${index}`} key={index} className='accordion'>
                   <Accordion.Header>{item.title}</Accordion.Header>
                   <Accordion.Body>
                     <Container>
