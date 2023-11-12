@@ -12,8 +12,8 @@ const App = () => {
     <>
       <NavBar />
       <main className='main'>
-        <Hero />
-        <Element name='about'><About /></Element>
+        <Element name='about'><Hero /></Element>
+        <About />
         <Element name='projects'><Projects /></Element>
         <Element name='music'><Music /> </Element >
         <Element name='contact'><Contact /></Element >
