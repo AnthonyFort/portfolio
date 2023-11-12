@@ -62,16 +62,13 @@ export default function ContactForm() {
       <div className='form-div'>
         <Form onSubmit={sendEmail} className='form'>
           <Form.Group className="mb-3" controlId="formBasicUserName">
-            <Form.Label>Your name</Form.Label>
-            <Form.Control type="text" placeholder="Your name" name="user_name" />
+            <Form.Control type="text" className="form-group" placeholder="Your name" name="user_name" />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Your email" name="user_email" />
+            <Form.Control type="email" className="form-group" placeholder="Your email" name="user_email" />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicMessage">
-            <Form.Label>Your Message</Form.Label>
-            <Form.Control as="textarea" placeholder="Your message" name="message" />
+            <Form.Control as="textarea" className="form-group" placeholder="Your message" name="message" />
           </Form.Group>
           <div className='form-button'>
             <Button variant="primary" type="submit" disabled={isSubmitting} value="Send" size="sm">
