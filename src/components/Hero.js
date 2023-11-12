@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'react-bootstrap'
-import WebsitePic from '../images/website-pic-2.png'
+import WebsitePic from '../images/website-pic-2.webp'
 
 export default function Hero() {
   return (

@@ -1,9 +1,9 @@
 import { Container, Row, Col, Button, Accordion } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import evenNote from '../images/even-note.png'
-import phd from '../images/phd.png'
-import masters from '../images/masters.png'
-import podcast from '../images/podcast.png'
+import evenNote from '../images/even-note.webp'
+import phd from '../images/phd.webp'
+import masters from '../images/masters.webp'
+import podcast from '../images/podcast.webp'
 import { Link as InnerLink, animateScroll as scroll } from 'react-scroll'
 import { Link as ScrollLink } from 'react-scroll'
 

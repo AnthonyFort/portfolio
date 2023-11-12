@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import emailjs from 'emailjs-com'
 
-import { Container, Row, Col, Form, Button } from 'react-bootstrap'
+import { Form, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 export default function ContactForm() {

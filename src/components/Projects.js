@@ -1,7 +1,7 @@
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import cmDatabaseImage from '../images/macbook-cm-database.png'
-import Froggus from '../images/macbook-froggus.png'
+import cmDatabaseImage from '../images/macbook-cm-database.webp'
+import Froggus from '../images/macbook-froggus.webp'
 import { DiPython, DiDjango, DiReact, DiPostgresql, DiJavascript, DiHtml5, DiCss3 } from 'react-icons/di'
 import { Fragment } from 'react'
 
