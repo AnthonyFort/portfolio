@@ -67,7 +67,7 @@ export default function ContactForm() {
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" name="user_email" />
+            <Form.Control type="email" placeholder="Your email" name="user_email" />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicMessage">
             <Form.Label>Your Message</Form.Label>
