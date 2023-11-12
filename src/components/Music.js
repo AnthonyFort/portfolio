@@ -41,8 +41,8 @@ export default function Music() {
       ),
     },
     {
-      title: 'Musical Composition...',
-      media: 'https://www.youtube.com/embed/OTBAwCj6bCc',
+      title: 'Songwriting...',
+      media: 'https://www.youtube.com/embed/VbWTmpNSTKU',
       description: (
         <>
           <p>I write in multiple genres, but find it fascinating how my personality and self-beliefs leak into everything I do.</p>
