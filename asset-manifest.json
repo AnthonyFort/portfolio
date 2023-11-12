@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.abd77d94.css",
-    "main.js": "/static/js/main.b77be346.js",
-    "static/media/website-pic-2.png": "/static/media/website-pic-2.8662718c300d45fe13e2.png",
-    "static/media/even-note.png": "/static/media/even-note.ce7f134b4d30aca229d1.png",
-    "static/media/podcast.png": "/static/media/podcast.30310a1b8b8db379d063.png",
-    "static/media/phd.png": "/static/media/phd.76a5a5fadce5fcd1898b.png",
-    "static/media/macbook-froggus.png": "/static/media/macbook-froggus.f0349e416e9b3deb73fc.png",
-    "static/media/masters.png": "/static/media/masters.69a0bf370e31d51aa9c5.png",
-    "static/media/macbook-cm-database.png": "/static/media/macbook-cm-database.a2162ce4e6edd1986d84.png",
+    "main.js": "/static/js/main.7918fbe5.js",
+    "static/media/even-note.webp": "/static/media/even-note.9980bbea22b1286eb543.webp",
+    "static/media/website-pic-2.webp": "/static/media/website-pic-2.27fd0f9f0e2289f69ee4.webp",
+    "static/media/podcast.webp": "/static/media/podcast.83e43981d61142ca38a4.webp",
+    "static/media/masters.webp": "/static/media/masters.8160e75ff341b8707b39.webp",
+    "static/media/phd.webp": "/static/media/phd.796faa2c742b88f06d64.webp",
+    "static/media/macbook-froggus.webp": "/static/media/macbook-froggus.4eefb6daa61c83b0fc4c.webp",
+    "static/media/macbook-cm-database.webp": "/static/media/macbook-cm-database.d507a241cd7d461d9030.webp",
     "index.html": "/index.html",
     "main.abd77d94.css.map": "/static/css/main.abd77d94.css.map",
-    "main.b77be346.js.map": "/static/js/main.b77be346.js.map"
+    "main.7918fbe5.js.map": "/static/js/main.7918fbe5.js.map"
   },
   "entrypoints": [
     "static/css/main.abd77d94.css",
-    "static/js/main.b77be346.js"
+    "static/js/main.7918fbe5.js"
   ]
 }
