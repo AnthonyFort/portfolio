@@ -51,7 +51,6 @@ export default function ContactForm() {
           }, 5000)
         }
       )
-
     e.target.reset()
   }
 
@@ -85,32 +84,9 @@ export default function ContactForm() {
               {item.text}
             </Link>
           </div>
-        ))}
+        ))} 
       </div>
+      <p className='web-info'>Made in React.js</p>
     </div>
-
   )
 }
-
-
-// export default function Contact() {
-
-
-
-//   return (
-//     <Container className='mb-5 contact-container'>
-//       <h2 className='header-text'>Contact</h2>
-//       <Row className='contact-row'>
-//         {contactLinks.map((item, index) => (
-//           <Col xs={12} key={index}>
-// <Link to={item.link} target='_blank' rel="noopener noreferrer" style={{ fontSize: '14px' }}>
-//   <FontAwesomeIcon icon={item.icon} size='md' style={{ color: 'black', marginRight: '8px' }} />
-//   {item.text}
-// </Link>
-//           </Col>
-//         ))}
-//       </Row>
-
-//     </Container>
-//   )
-// }

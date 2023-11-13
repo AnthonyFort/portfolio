@@ -1,10 +1,9 @@
-import { Container, Row, Col, Button, Accordion } from 'react-bootstrap'
+import { Container, Row, Col, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import evenNote from '../images/even-note.webp'
 import phd from '../images/phd.webp'
 import masters from '../images/masters.webp'
 import podcast from '../images/podcast.webp'
-import { Link as InnerLink, animateScroll as scroll } from 'react-scroll'
 import { Link as ScrollLink } from 'react-scroll'
 import { useState } from 'react'
 
@@ -64,7 +63,7 @@ export default function Music() {
       media: 'https://www.youtube.com/embed/-zs8MLRk45c?list=PL9NhgGsNfA7XVmCLy1IUJQRRdqBLyJq1p',
       description: (
         <>
-          <p>I used to teach composition at Cambridge University, and made a 30-lesson course in Classical improvisation.</p>
+          <p>I used to teach composition at Cambridge University, and made a supplementary 30-lesson course in Classical improvisation.</p>
         </>
       ),
     },
@@ -98,14 +97,13 @@ export default function Music() {
           <iframe
             src={media}
             title={title}
-            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>
         </div>
       )
     } else {
-      return <img src={media} alt={title} className="img-fluid accordion-img" />
+      return <img src={media} alt={title} className="img-fluid music-img" />
     }
   }
 
@@ -129,52 +127,20 @@ export default function Music() {
       </div>
       <Container>
         <Row className="justify-content-md-center music-content-outer-div">
-
           {musicInfo.filter(item => (
             item.title === showItem
           )).map((item, index) => (
             <div key={index} className='music-content-div'>
-              <Col xs={12} className='accordion-media'>
+              <Col xs={12}>
                 {renderMedia(item.media, item.title)}
               </Col>
-              <Col xs={12} lg={8} className='accordion-text'>
+              <Col xs={12} lg={8} className='music-text'>
                 {item.description}
               </Col>
             </div>
           ))}
-
         </Row>
       </Container>
-
     </div>
-    // <div className='accordion-div'>
-    //   <Container className='m-3'>
-    //     <h2 className='header-text'>Music</h2>
-    //     <Row className='mt-4'>
-    //       <Col xs={10} sm={10} md={10} className="mx-auto">
-    //         <Accordion >
-    //           {musicInfo.map((item, index) => (
-    //             <Accordion.Item eventKey={`${index}`} key={index} className='accordion'>
-    //               <Accordion.Header>{item.title}</Accordion.Header>
-    //               <Accordion.Body>
-    //                 <Container>
-    //                   <Row className="justify-content-md-center">
-    //                     <Col xs={12} className='accordion-media'>
-    //                       {renderMedia(item.media, item.title)}
-    //                     </Col>
-    //                     <Col xs={12} lg={8} className='accordion-text'>
-    //                       {item.description}
-    //                     </Col>
-    //                   </Row>
-    //                 </Container>
-    //               </Accordion.Body>
-    //             </Accordion.Item>
-    //           ))}
-    //         </Accordion>
-
-  //       </Col>
-  //     </Row>
-  //   </Container>
-  // </div>
   )
 }
