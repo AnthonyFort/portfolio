@@ -119,7 +119,7 @@ export default function Music() {
       <div className='music-buttons-div'>
         <Row className='music-buttons-row'>
           {musicInfo.map((item, index) => (
-            <Col key={index} lg={1} md={3} sm={4} xs={6}>
+            <Col key={index} lg={1} md={3} sm={4} xs={6} className='music-button-col'>
               <button className="music-button" onClick={() => selectMenuItem(item.title)}>{item.title}</button>
             </Col>
           ))}
