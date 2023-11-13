@@ -6,12 +6,13 @@ import masters from '../images/masters.webp'
 import podcast from '../images/podcast.webp'
 import { Link as InnerLink, animateScroll as scroll } from 'react-scroll'
 import { Link as ScrollLink } from 'react-scroll'
+import { useState } from 'react'
 
 export default function Music() {
 
   const musicInfo = [
     {
-      title: 'PhD Research...',
+      title: 'PhD Research',
       media: phd,
       description: (
         <>
@@ -21,7 +22,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'Even-Note Illusion...',
+      title: 'Even-Note Illusion',
       media: evenNote,
       description: (
         <>
@@ -31,7 +32,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'Musical \'Decoding\'...',
+      title: 'Musical \'Decoding\'',
       media: masters,
       description: (
         <>
@@ -41,7 +42,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'Songwriting...',
+      title: 'Songwriting',
       media: 'https://www.youtube.com/embed/VbWTmpNSTKU',
       description: (
         <>
@@ -50,7 +51,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'Children\'s Music...',
+      title: 'Children\'s Music',
       media: 'https://www.youtube.com/embed/EwwrAh_IneY',
       description: (
         <>
@@ -59,7 +60,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'University Teaching...',
+      title: 'University Teaching',
       media: 'https://www.youtube.com/embed/-zs8MLRk45c?list=PL9NhgGsNfA7XVmCLy1IUJQRRdqBLyJq1p',
       description: (
         <>
@@ -68,7 +69,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'Psychology for Songwriters Podcast...',
+      title: 'Podcast',
       media: podcast,
       description: (
         <>
@@ -78,7 +79,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'Union Chapel...',
+      title: 'Union Chapel',
       media: 'https://www.youtube.com/embed/59uGN0oxS6A',
       description: (
         <>
@@ -87,6 +88,8 @@ export default function Music() {
       ),
     }
   ]
+
+  const [showItem, setShowItem] = useState('PhD Research')
 
   function renderMedia(media, title) {
     if (media.includes('youtube.com')) {
@@ -105,36 +108,69 @@ export default function Music() {
       return <img src={media} alt={title} className="img-fluid accordion-img" />
     }
   }
-  
-  return (
-    <div className='accordion-div'>
-      <Container className='m-3'>
-        <h2 className='header-text'>Music</h2>
-        <Row className='mt-4'>
-          <Col xs={10} sm={10} md={10} className="mx-auto">
-            <Accordion >
-              {musicInfo.map((item, index) => (
-                <Accordion.Item eventKey={`${index}`} key={index} className='accordion'>
-                  <Accordion.Header>{item.title}</Accordion.Header>
-                  <Accordion.Body>
-                    <Container>
-                      <Row className="justify-content-md-center">
-                        <Col xs={12} className='accordion-media'>
-                          {renderMedia(item.media, item.title)}
-                        </Col>
-                        <Col xs={12} lg={8} className='accordion-text'>
-                          {item.description}
-                        </Col>
-                      </Row>
-                    </Container>
-                  </Accordion.Body>
-                </Accordion.Item>
-              ))}
-            </Accordion>
 
-          </Col>
+  function selectMenuItem(title) {
+    console.log('YES')
+    setShowItem(title)
+    console.log(showItem)
+  }
+
+  return (
+    <div>
+      <div>
+        {musicInfo.map((item, index) => (
+          <button key={index} className="w3-bar-item w3-button" onClick={() => selectMenuItem(item.title)}>{item.title}</button>
+
+        ))}
+      </div>
+      <Container>
+        <Row className="justify-content-md-center">
+
+          {musicInfo.filter(item => (
+            item.title === showItem
+          )).map((item, index) => (
+            <div key={index}>
+              <Col xs={12} className='accordion-media'>
+                {renderMedia(item.media, item.title)}
+              </Col>
+              <Col xs={12} lg={8} className='accordion-text'>
+                {item.description}
+              </Col>
+            </div>
+          ))}
+
         </Row>
       </Container>
+
     </div>
+    // <div className='accordion-div'>
+    //   <Container className='m-3'>
+    //     <h2 className='header-text'>Music</h2>
+    //     <Row className='mt-4'>
+    //       <Col xs={10} sm={10} md={10} className="mx-auto">
+    //         <Accordion >
+    //           {musicInfo.map((item, index) => (
+    //             <Accordion.Item eventKey={`${index}`} key={index} className='accordion'>
+    //               <Accordion.Header>{item.title}</Accordion.Header>
+    //               <Accordion.Body>
+    //                 <Container>
+    //                   <Row className="justify-content-md-center">
+    //                     <Col xs={12} className='accordion-media'>
+    //                       {renderMedia(item.media, item.title)}
+    //                     </Col>
+    //                     <Col xs={12} lg={8} className='accordion-text'>
+    //                       {item.description}
+    //                     </Col>
+    //                   </Row>
+    //                 </Container>
+    //               </Accordion.Body>
+    //             </Accordion.Item>
+    //           ))}
+    //         </Accordion>
+
+  //       </Col>
+  //     </Row>
+  //   </Container>
+  // </div>
   )
 }
