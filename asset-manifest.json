@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2fe7d859.css",
-    "main.js": "/static/js/main.d7fcb02a.js",
+    "main.css": "/static/css/main.123e231d.css",
+    "main.js": "/static/js/main.5944df2f.js",
     "static/media/even-note.webp": "/static/media/even-note.9980bbea22b1286eb543.webp",
     "static/media/website-pic-2.webp": "/static/media/website-pic-2.27fd0f9f0e2289f69ee4.webp",
     "static/media/podcast.webp": "/static/media/podcast.83e43981d61142ca38a4.webp",
@@ -10,11 +10,11 @@
     "static/media/macbook-froggus.webp": "/static/media/macbook-froggus.4eefb6daa61c83b0fc4c.webp",
     "static/media/macbook-cm-database.webp": "/static/media/macbook-cm-database.d507a241cd7d461d9030.webp",
     "index.html": "/index.html",
-    "main.2fe7d859.css.map": "/static/css/main.2fe7d859.css.map",
-    "main.d7fcb02a.js.map": "/static/js/main.d7fcb02a.js.map"
+    "main.123e231d.css.map": "/static/css/main.123e231d.css.map",
+    "main.5944df2f.js.map": "/static/js/main.5944df2f.js.map"
   },
   "entrypoints": [
-    "static/css/main.2fe7d859.css",
-    "static/js/main.d7fcb02a.js"
+    "static/css/main.123e231d.css",
+    "static/js/main.5944df2f.js"
   ]
 }
