@@ -22,7 +22,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'Even-Note Illusion',
+      title: 'Illusion',
       media: evenNote,
       description: (
         <>
@@ -32,7 +32,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'Musical \'Decoding\'',
+      title: '\'Decoding\'',
       media: masters,
       description: (
         <>
@@ -51,7 +51,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'Children\'s Music',
+      title: 'Kid\'s Stuff',
       media: 'https://www.youtube.com/embed/EwwrAh_IneY',
       description: (
         <>
@@ -60,7 +60,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'University Teaching',
+      title: 'Uni Teaching',
       media: 'https://www.youtube.com/embed/-zs8MLRk45c?list=PL9NhgGsNfA7XVmCLy1IUJQRRdqBLyJq1p',
       description: (
         <>
@@ -116,12 +116,16 @@ export default function Music() {
   }
 
   return (
-    <div>
-      <div>
-        {musicInfo.map((item, index) => (
-          <button key={index} className="w3-bar-item w3-button" onClick={() => selectMenuItem(item.title)}>{item.title}</button>
-
-        ))}
+    <div className='music-outer-div'>
+      <h2 className='header-text'>Music</h2>
+      <div className='music-buttons-div'>
+        <Row className='music-buttons-row'>
+          {musicInfo.map((item, index) => (
+            <Col key={index} lg={1} md={3} sm={4} xs={6}>
+              <button className="music-button" onClick={() => selectMenuItem(item.title)}>{item.title}</button>
+            </Col>
+          ))}
+        </Row>
       </div>
       <Container>
         <Row className="justify-content-md-center">
@@ -129,7 +133,7 @@ export default function Music() {
           {musicInfo.filter(item => (
             item.title === showItem
           )).map((item, index) => (
-            <div key={index}>
+            <div key={index} className='music-content-div'>
               <Col xs={12} className='accordion-media'>
                 {renderMedia(item.media, item.title)}
               </Col>
