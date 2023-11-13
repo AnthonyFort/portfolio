@@ -26,7 +26,7 @@ export default function Music() {
       media: evenNote,
       description: (
         <>
-          <p>I constructed an auditory illusion which uses carefully-placed click sounds to alter the way a separate musical rhythm is perceived.</p>
+          <p>I constructed the &apos;Even Note&apos; auditory illusion which uses carefully-placed click sounds to alter the way a separate musical rhythm is perceived.</p>
           <p>Please <ScrollLink to="contact" smooth={true} duration={500} className='link-text'>contact me</ScrollLink> for more info.</p>
         </>
       ),
@@ -51,7 +51,7 @@ export default function Music() {
       ),
     },
     {
-      title: 'Kid\'s Stuff',
+      title: 'Kids\' Stuff',
       media: 'https://www.youtube.com/embed/EwwrAh_IneY',
       description: (
         <>
@@ -128,7 +128,7 @@ export default function Music() {
         </Row>
       </div>
       <Container>
-        <Row className="justify-content-md-center">
+        <Row className="justify-content-md-center music-content-outer-div">
 
           {musicInfo.filter(item => (
             item.title === showItem
