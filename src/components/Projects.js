@@ -2,7 +2,10 @@ import { Container, Row, Col, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import cmDatabaseImage from '../images/macbook-cm-database.webp'
 import Froggus from '../images/macbook-froggus.webp'
-import { DiPython, DiDjango, DiReact, DiPostgresql, DiJavascript, DiHtml5, DiCss3 } from 'react-icons/di'
+import Aag from '../images/macbook-aag.webp'
+import AJFH from '../images/macbook-afjh.webp'
+import { DiPython, DiDjango, DiReact, DiPostgresql, DiJavascript, DiHtml5, DiCss3, DiMongodb, DiNodejs, DiBootstrap } from 'react-icons/di'
+import { SiExpress } from 'react-icons/si'
 import { Fragment } from 'react'
 
 export default function Projects() {
@@ -64,6 +67,60 @@ export default function Projects() {
         {
           icon: DiCss3,
           iconTitle: 'CSS',
+        }
+      ],
+    },
+    {
+      title: 'AAG Music',
+      image: Aag,
+      description: (
+        <>
+          <p>A music-sharing platform with a twist (group project).</p>
+          <div className='project-button-div'>
+            <Button as={Link} to='https://github.com/GhostieBby/aag-music-final/blob/main/README-anthony-fort.md' target='_blank' className='m-2 project-button' size='sm'>GitHub</Button>
+            <Button as={Link} to='https://aag-music-final-772143c93aa4.herokuapp.com/' target='_blank' className='m-2 project-button' size='sm'>Visit</Button>
+          </div>
+        </>
+      ),
+      skills: [
+        {
+          icon: DiMongodb,
+          iconTitle: 'MongoDB',
+        },
+        {
+          icon: SiExpress,
+          iconTitle: 'Express',
+        },
+        {
+          icon: DiReact,
+          iconTitle: 'React',
+        },
+        {
+          icon: DiNodejs,
+          iconTitle: 'Node',
+        }
+      ],
+    },
+    {
+      title: 'AFJH Store',
+      image: AJFH,
+      description: (
+        <>
+          <p>An imitation of a basic e-commerce site (pair project).</p>
+          <div className='project-button-div'>
+            <Button as={Link} to='https://github.com/AnthonyFort/afjh-store/blob/main/README-anthony-fort.md' target='_blank' className='m-2 project-button' size='sm'>GitHub</Button>
+            <Button as={Link} to='https://afjh-store.netlify.app/' target='_blank' className='m-2 project-button' size='sm'>Visit</Button>
+          </div>
+        </>
+      ),
+      skills: [
+        {
+          icon: DiReact,
+          iconTitle: 'React',
+        },
+        {
+          icon: DiBootstrap,
+          iconTitle: 'Bootstrap',
         }
       ],
     }
